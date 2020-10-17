@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounditems"
+    tools:context=".ShowUserInformationActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/herrfrauTextView"
+            android:layout_width="135dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="top|bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/vornameTitleTextview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meineAngabenTextView"
+            app:layout_constraintVertical_bias="0.85" />
+
+        <TextView
+            android:id="@+id/vornameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="top|bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/nachnameTitleTextview"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/nachnameTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="48dp"
+            android:gravity="top|bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/handyNummerTitleTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/handynummerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="top|bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/adresseTitleTextView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/adresseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="top|bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/changeUserInfoButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/meineAngabenTextView"
+            android:layout_width="252dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Meine Angaben" />
+
+        <TextView
+            android:id="@+id/vornameTitleTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:text="Vorname:"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/vornameTextView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/nachnameTitleTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:text="Nachname:"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/nachnameTextview"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/handyNummerTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:text="Handynummer:"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/handynummerTextView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/adresseTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:text="Adresse:"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/adresseTextView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/changeUserInfoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
+            android:onClick="changeUserInfo"
+            android:text="Andern"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

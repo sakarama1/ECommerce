@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/itemNameCardAdapter"
+        android:layout_width="371dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="7dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/itemCardAdapterImageView"
+        android:layout_width="369dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp" />
+
+    <TextView
+        android:id="@+id/itemPriceCardAdapter"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:gravity="right|center"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/itemQuantityCardAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:text="TextView"
+        android:textSize="30sp" />
+</LinearLayout>

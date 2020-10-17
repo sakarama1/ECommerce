@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgirl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/damenButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="350dp"
+        android:alpha="0.5"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="damen"
+        android:text="damen"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/makeupButton"
+        app:layout_constraintEnd_toStartOf="@+id/herrenButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/herrenButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="350dp"
+        android:alpha="0.5"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="herren"
+        android:text="herren"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/korperPflegeButton"
+        app:layout_constraintEnd_toStartOf="@+id/haareButton"
+        app:layout_constraintStart_toEndOf="@+id/damenButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/haareButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="350dp"
+        android:alpha="0.5"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="haare"
+        android:text="haare"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/zubehorButton"
+        app:layout_constraintEnd_toStartOf="@+id/warenKorbButton"
+        app:layout_constraintStart_toEndOf="@+id/herrenButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/warenKorbButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.5"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="warenKorb"
+        android:text="waren Korb"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/newsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/haareButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/makeupButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.5"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="makeup"
+        android:text="make up"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/korperPflegeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/damenButton" />
+
+    <Button
+        android:id="@+id/korperPflegeButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.5"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="korperPflege"
+        android:text="korper Pflege"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zubehorButton"
+        app:layout_constraintStart_toEndOf="@+id/makeupButton"
+        app:layout_constraintTop_toBottomOf="@+id/herrenButton" />
+
+    <Button
+        android:id="@+id/zubehorButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.5"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="zubehor"
+        android:text="zubehor"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/newsButton"
+        app:layout_constraintStart_toEndOf="@+id/korperPflegeButton"
+        app:layout_constraintTop_toBottomOf="@+id/haareButton" />
+
+    <Button
+        android:id="@+id/newsButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.5"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="news"
+        android:text="news"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/zubehorButton"
+        app:layout_constraintTop_toBottomOf="@+id/warenKorbButton" />
+
+</android.support.constraint.ConstraintLayout>

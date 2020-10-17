@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ShowItemActivity"
+tools:layout_editor_absoluteY="81dp">
+
+<ImageView
+    android:id="@+id/showItemImageView"
+    android:layout_width="190dp"
+    android:layout_height="210dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/showItemNameTextView"
+    app:srcCompat="@drawable/cosmo" />
+
+<TextView
+    android:id="@+id/showItemNameTextView"
+    android:layout_width="213dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="8dp"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/enterQuantityEditText"
+    android:layout_width="126dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="56dp"
+    android:layout_marginEnd="8dp"
+    android:ems="10"
+    android:gravity="center"
+    android:inputType="numberDecimal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.516"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/showItemImageView" />
+
+<TextView
+    android:id="@+id/showQuantityTextView"
+    android:layout_width="126dp"
+    android:layout_height="19dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/enterQuantityEditText" />
+
+<Button
+    android:id="@+id/minusButton"
+    android:layout_width="42dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="56dp"
+    android:layout_marginEnd="8dp"
+    android:onClick="minus"
+    android:text="-"
+    app:layout_constraintEnd_toStartOf="@+id/enterQuantityEditText"
+    app:layout_constraintHorizontal_bias="0.873"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/showItemImageView" />
+
+<Button
+    android:id="@+id/plusButton"
+    android:layout_width="42dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="56dp"
+    android:layout_marginEnd="8dp"
+    android:onClick="plus"
+    android:text="+"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toEndOf="@+id/enterQuantityEditText"
+    app:layout_constraintTop_toBottomOf="@+id/showItemImageView" />
+tools:layout_editor_absoluteY="330dp" />
+
+<Button
+    android:id="@+id/toCartButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="40dp"
+    android:layout_marginBottom="32dp"
+    android:onClick="buy"
+    android:text="kaufen"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+<Button
+    android:id="@+id/toFavoriteButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginBottom="32dp"
+    android:onClick="addToFav"
+    android:text="Fav"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<TextView
+    android:id="@+id/showItemPriceTextView"
+    android:layout_width="168dp"
+    android:layout_height="34dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="8dp"
+    android:gravity="center"
+    android:text="TextView"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.502"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/showItemImageView" />
+</android.support.constraint.ConstraintLayout>

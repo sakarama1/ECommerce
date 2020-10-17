@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--<item-->
+        <!--android:id="@+id/nav_home"-->
+        <!--android:icon="@drawable/ic_home_black_24dp"-->
+        <!--android:title="Home" />-->
+
+    <group android:checkableBehavior="single">
+        <item android:title="Mein Profil">
+            <menu>
+                <item
+                    android:id="@+id/nav_user_info"
+                    android:icon="@drawable/ic_account_circle_black_24dp"
+                    android:title="Meine Daten" />
+                <item
+                    android:id="@+id/nav_fav"
+                    android:icon="@drawable/ic_favorite_black_24dp"
+                    android:title="Favoriten" />
+
+                <item
+                    android:id="@+id/nav_bestellung"
+                    android:icon="@drawable/ic_local_shipping_black_24dp"
+                    android:title="Bestellungen" />
+
+                <item
+                    android:id="@+id/nav_suchen"
+                    android:icon="@drawable/ic_search_black_24dp"
+                    android:title="Suchen" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Uber Uns">
+            <menu>
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Gallerie" />
+
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@drawable/ic_phone_black_24dp"
+                    android:title="Kontakt" />
+            </menu>
+        </item>
+    </group>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_input_black_24dp"
+        android:title="Log out" />
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "910078203991",
+    "firebase_url": "https://cosmoswiss-e46c0.firebaseio.com",
+    "project_id": "cosmoswiss-e46c0",
+    "storage_bucket": "cosmoswiss-e46c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910078203991:android:03277237a51b4d9e",
+        "android_client_info": {
+          "package_name": "com.example.sarpe.cosmoswiss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910078203991-tji353hua1ga9b8ov3ir41r1js9tlh4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sarpe.cosmoswiss",
+            "certificate_hash": "c574a9f94c73fd00271db4062c02194749b95bb3"
+          }
+        },
+        {
+          "client_id": "910078203991-qt92ashd0me52csuu2su2ou18t08ku18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS6DSp2rvTbeo8y1_cmsZVSO4bGtwZgMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910078203991-qt92ashd0me52csuu2su2ou18t08ku18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
